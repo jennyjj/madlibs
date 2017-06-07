@@ -1,8 +1,13 @@
 <html>
     <body>
-
         There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
         When {{ character }} went to pick it up, it burst into flames in a totally
-        {{ adjective }} way.
+        {{ adjective }} way.  {{ character }} wanted to 
+        <ul>
+            {% for adverb in adverbs %}
+                <li>{{ adverb }}</li>
+            {% endfor %}
+        </ul>
+        {{ verb }}.
     </body>
 </html>
